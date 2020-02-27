@@ -1,12 +1,34 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "reactstrap";
+import Login from "./Login";
 
 function Home() {
 	return (
-		<div>
-			<h2>Home</h2>
-			<NavLink to='/signin'>Log In</NavLink>
-		</div>
+		<>
+			<h1>Welcome!</h1>
+			<div style={{ display: "flex", justifyContent: "center" }}>
+				<Button color='danger' style={{ margin: "10px" }}>
+					<NavLink
+						to='/'
+						style={{ color: "white", textDecoration: "none" }}
+					>
+						Home
+					</NavLink>
+				</Button>
+
+				<Button color='danger' style={{ margin: "10px" }}>
+					<NavLink
+						to='/signup'
+						style={{ color: "white", textDecoration: "none" }}
+					>
+						Sign Up
+					</NavLink>
+				</Button>
+
+				<Login />
+			</div>
+		</>
 	);
 }
 
