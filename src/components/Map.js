@@ -1,11 +1,11 @@
 import React from "react";
 
-function Login() {
+function Map() {
 	return (
 		<div>
-			<h2>Log In</h2>
+			<h2>Map</h2>
 		</div>
 	);
 }
 
-export default Login;
+export default Map;
